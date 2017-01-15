@@ -4,7 +4,7 @@
   "version": "1.0.0-beta.4",
   "scripts": {
     "clean": "shx rm -rf lib lib-esm _bundles _doc",
-    "build": "npm run clean && node_modules/.bin/ngc && node_modules/.bin/ngc -p tsconfig.esm.json && webpack",
+    "build": "webpack",
     "test": "karma start config/karma.ng2.js",
     "docs": "typedoc --tsconfig tsconfig.typedoc.json --readme README.md --name 'ui-router-ng2' --theme node_modules/ui-router-typedoc-themes/bin/default --out _doc --internal-aliases internal,coreapi,ng2api --external-aliases internalapi,external --navigation-label-globals ui-router-ng2"
   },
